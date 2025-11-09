@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛР9</title>
+  <link rel="stylesheet" href="lr9.css">
+</head>
+<body>
+  <div class="container">
+    <div id="winner-text"></div>
+
+    <div class="game">
+      <div class="player">
+        <div id="user-name">User</div>
+        <div class="score" id="user-score">0</div>
+        <div class="cards-row" id="user-cards"></div>
+      </div>
+
+      <div class="controls">
+        <div id="message">Натисни "Generate", щоб почати!</div>
+        <button id="generate-btn" class="btn" onclick="generateRound()">Generate</button>
+        <div id="round-info">Спроба: 0 з 3</div>
+        <button id="reset-btn" class="btn-secondary" onclick="resetGame()">Reset</button>
+      </div>
+
+      <div class="player computer">
+        <div id="computer-name">Computer</div>
+        <div class="score" id="computer-score">0</div>
+        <div class="cards-row" id="computer-cards"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="lr9.js"></script>
+</body>
+</html>

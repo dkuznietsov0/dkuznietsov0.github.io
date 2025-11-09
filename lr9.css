@@ -1,0 +1,128 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+#winner-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.score { font-size: 18px; }
+
+.cards-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  min-height: 150px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 140px;
+  border-radius: 10px;
+  background: #eaf2ff;
+  color: #071028;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: transform 0.4s cubic-bezier(.22,.9,.32,1), opacity 0.3s ease;
+}
+
+.card.dealt {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.card .top, .card .bottom { font-size: 14px; }
+.card .center-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 6px 0;
+}
+
+.suit-red { color: #d6336c; }
+.suit-black { color: #0b1220; }
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-width: 160px;
+  height: 130px;
+}
+
+#message { font-size: 16px; margin-bottom: 5px; }
+
+.btn {
+  background: #9ca3af;
+  border: none;
+  color: #071028;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.btn:active { transform: translateY(0) scale(0.98); }
+
+.btn-secondary {
+  background: transparent;
+  color: #071028;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px){
+  .game {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .cards-row {
+    min-height: 120px;
+  }
+  .card {
+    width: 80px;
+    height: 110px;
+  }
+  .card .center-rank {
+    font-size: 20px;
+  }
+}
