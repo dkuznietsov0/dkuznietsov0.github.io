@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ЛР10</title>
+  <link rel="stylesheet" href="lr10.css">
+</head>
+<body>
+  <main class="container">
+    <header class="player">
+      <h1 id="playerName">User</h1>
+      <div id="attempts" class="attempts">Спроба 1 з 3</div>
+    </header>
+
+    <section class="controls">
+      <button id="generateBtn" class="btn primary">Generate</button>
+      <button id="resetBtn" class="btn secondary" hidden>Reset</button>
+    </section>
+
+    <section class="slot-wrap">
+      <div class="slot-machine" id="slotMachine">
+        <div class="column" data-col="0">
+          <div class="cell"><span class="emoji">🍎</span></div>
+          <div class="cell"><span class="emoji">🍎</span></div>
+          <div class="cell"><span class="emoji">🍎</span></div>
+        </div>
+        <div class="column" data-col="1">
+          <div class="cell"><span class="emoji">🍎</span></div>
+          <div class="cell"><span class="emoji">🍎</span></div>
+          <div class="cell"><span class="emoji">🍎</span></div>
+        </div>
+        <div class="column" data-col="2">
+          <div class="cell"><span class="emoji">🍎</span></div>
+          <div class="cell"><span class="emoji">🍎</span></div>
+          <div class="cell"><span class="emoji">🍎</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="message" class="message"></div>
+  </main>
+
+  <script src="lr10.js" defer></script>
+</body>
+</html>

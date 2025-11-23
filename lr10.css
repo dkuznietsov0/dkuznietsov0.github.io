@@ -1,0 +1,90 @@
+:root {
+  --primary: #1db954;
+  --card: #fff;
+  --border: #c7d7e3;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 16px;
+  text-align: center;
+}
+
+.player h1 {
+  margin: 0 0 6px;
+  font-size: 1.8rem;
+}
+
+.attempts {
+  color: #6c7a89;
+  font-size: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 22px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: #eef2f5;
+}
+
+.slot-machine {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.column {
+  display: grid;
+  gap: 8px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #eef4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 48px;
+}
+
+.message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-height: 1.4em;
+}
