@@ -3,19 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Індивідуальне завдання</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .card {
+            width: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px auto 0 auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card a {
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h2>Лабораторні роботи</h2>
-    <ul>
-        <li><a href="lr7.html">Лабораторна робота 7</a></li>
-        <li><a href="lr8.html">Лабораторна робота 8</a></li>
-        <li><a href="lr9.html">Лабораторна робота 9</a></li>
-        <li><a href="lr10.html">Лабораторна робота 10</a></li>
-    </ul>
+    <div class="cards-container">
+
+        <div class="card">
+            <img src="img/magic_ball.png" alt="Магічна куля">
+            <div class="card-title">Магічна куля</div>
+            <a href="lr7.html">Відкрити</a>
+        </div>
+
+        <div class="card">
+            <img src="img/higher_number.png" alt="В кого більше число">
+            <div class="card-title">В кого більше число</div>
+            <a href="lr8.html">Відкрити</a>
+        </div>
+
+        <div class="card">
+            <img src="img/21_game.png" alt="21">
+            <div class="card-title">21</div>
+            <a href="lr9.html">Відкрити</a>
+        </div>
+
+        <div class="card">
+            <img src="img/slot_machine.png" alt="Однорукий бандит">
+            <div class="card-title">Однорукий бандит</div>
+            <a href="lr10.html">Відкрити</a>
+        </div>
+
+    </div>
 </body>
 </html>
-
-
-
-
