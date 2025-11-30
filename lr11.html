@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР11</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="lr11.css">
+</head>
+<body>
+
+<h2>Вивчення англійських слів</h2>
+
+<div id="progress">Крок: 1/10</div>
+
+<div class="card" id="wordCard">word</div>
+
+<input type="text" id="answerInput" placeholder="Введіть переклад...">
+
+<div id="stats">
+    Правильних: <span id="correct">0</span><br>
+    Неправильних: <span id="wrong">0</span>
+</div>
+
+<div id="modal">
+    <div id="modalContent">
+        <h3>Рівень знань</h3>
+        <p id="resultText"></p>
+        <button id="closeModal">OK</button>
+    </div>
+</div>
+
+<script src="lr11.js"></script>
+</body>
+</html>
