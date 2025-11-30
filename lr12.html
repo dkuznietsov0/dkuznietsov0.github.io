@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР12</title>
+    <link rel="stylesheet" href="lr12.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Тренажер з англійської мови</h1>
+
+        <div class="settings">
+            <label for="difficulty">Рівень складності:</label>
+            <select id="difficulty">
+                <option value="easy">Легкий (5 слів)</option>
+                <option value="medium" selected>Середній (10 слів)</option>
+                <option value="hard">Важкий (15 слів)</option>
+            </select>
+            <button id="startBtn">Почати тест</button>
+        </div>
+
+        <div class="game">
+            <div id="wordCard" class="card">Натисніть "Почати тест"</div>
+            <input type="text" id="answerInput" placeholder="Введіть переклад">
+            <div id="progress">0/0</div>
+            <div class="counters">
+                <span>Правильно: <span id="correct">0</span></span>
+                <span>Неправильно: <span id="wrong">0</span></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="lr12.js"></script>
+</body>
+</html>
